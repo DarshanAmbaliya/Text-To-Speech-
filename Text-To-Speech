@@ -1,0 +1,14 @@
+# Text-To-Speech-
+from gtts import gTTS
+import os
+
+abc = open('s.txt')
+text = abc.read()
+
+language = 'en'
+
+obj = gTTS(text = text,lang = 'en',slow = True)
+
+obj.save("s.mp3")
+
+os.system("s.mp3")
